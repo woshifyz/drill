@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.modal-btn-close {
+    transition: all 235ms ease-in-out 0s;
+    color: #c1c0bd;
+    cursor: pointer;
+    font-size: 30px;
+    height: 1.1rem;
+    position: absolute;
+    right: 1rem;
+    text-decoration: none;
+    top: 1rem;
+    width: 1.1rem;
+}
+
+
+.ReactModal__Overlay {
+    z-index: 999999;
+}
+
+.ReactModal__Overlay {
+    /*opacity: 0;*/
+    /*transition: opacity 200ms ease-in-out;*/
+    animation: 200ms slidein
+}
+
+.ReactModal__Overlay--after-open{
+    opacity: 1;
+}
+
+.ReactModal__Overlay--before-close{
+    opacity: 0;
+}
+
+.ql-snow .ql-editor pre.ql-syntax {
+    background-color: rgba(71,87,120,0.08);
+    color: black;
+}
+

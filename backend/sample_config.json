@@ -1,0 +1,18 @@
+{
+  "ws_url": "ws://localhost:8080",
+  "ws_port": 8080,
+  "http_port": 9000,
+  "room_backend": "memory",
+  "redis_room_backend": {
+    "url": "localhost:6379",
+    "db": 0,
+    "timeout": 3600
+  },
+  "enable_turn": false,
+  "turn_config": {
+    "user": "woshifyz",
+    "password": "woshifyz",
+    "udp_port": 10000,
+    "realm": "localhost"
+  }
+}

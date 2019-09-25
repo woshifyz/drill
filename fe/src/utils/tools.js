@@ -1,0 +1,28 @@
+import { useState } from "react";
+
+export const useInput = initialValue => {
+  const [value, setValue] = useState(initialValue);
+
+  return {
+    value,
+    setValue,
+    reset: () => setValue(""),
+    bind: {
+      value,
+      onChange: event => {
+        setValue(event.target.value);
+      }
+    }
+  };
+};
+
+export const getLocalStorage = (key, toSetValue = null) => {
+  var val = localStorage.getItem(key);
+  if (val === null) {
+    if (toSetValue !== null) {
+      localStorage.setItem(key, toSetValue);
+      return toSetValue;
+    }
+  }
+  return val;
+}

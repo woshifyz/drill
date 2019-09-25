@@ -1,0 +1,76 @@
+.editorContainer {
+    margin-top: 46px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.editorMain {
+    min-height: 1000px; 
+    flex-grow: 6;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.editorInner {
+    flex-grow: 1;
+}
+
+.editerMembers {
+    flex-grow: 1;
+    height: 100%; 
+    min-width: 108px;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc; 
+    border-bottom: 1px solid #ccc;
+}
+
+.memberHeader {
+    height: 40px; 
+    border-bottom: 1px solid #ccc ;
+    font-size: 1.2em; 
+    text-align: center; 
+    line-height: 40px; 
+    vertical-align: middle; 
+}
+
+.memberMe {
+    text-align: center; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.memberOther {
+    text-align: center; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: grey;
+}
+
+@media screen and (max-width: 578px) {
+    .editorContainer {
+        margin-top: 0px;
+        flex-direction: column;
+    }
+    .editorMain {
+        min-height: 600px; 
+    }
+    .editerMembers {
+        border-top: 0px;
+    }
+}
+
+@media screen and (min-width: 960px) and (max-width: 1200px) {
+    .editorContainer {
+        width: 90%;
+    } 
+}
+
+@media screen and (min-width: 1200px) {
+    .editorContainer {
+        width: 1200px;
+    } 
+}
